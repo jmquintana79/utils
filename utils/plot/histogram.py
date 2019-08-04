@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 ## plot histogram from df
 def plot_hist_df(df, title, cumulative = False):
     import matplotlib.pyplot as plt
