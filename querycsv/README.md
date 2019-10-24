@@ -110,3 +110,4 @@ $ querycsv.py -i FL_insurance_sample.csv "select county, count(*) from FL_insura
 ## Notes
 - I had to update this script from Python2 to Python3. 
 - It was modified line 155: utf-8 enconde of cell values was replaced by a simple str(). This one was done because the SQL WHERE statement it was not working. 
+- It was modified line 272: Python2 to Python3. Open file in mode "wb" was replaced by "w".

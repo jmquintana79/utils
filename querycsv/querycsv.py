@@ -269,7 +269,8 @@ def main():
             sys.exit(1)
 
     if outfile:
-        with open(outfile, 'wb') as fp:
+        #with open(outfile, 'wb') as fp: # error python2 to python 3
+        with open(outfile, 'w') as fp:    
             write_csv(results, fp)
     else:
         pretty_print(results, sys.stdout)
